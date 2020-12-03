@@ -64,7 +64,7 @@ public class ElizaServerTest {
 		// Send message
 		session.getAsyncRemote().sendText("Are you ok?");
 		Thread.sleep(50);
-		// Check received messages
+		// Check received messages and list size
 		assertEquals(5, list.size());
 		assertEquals("The doctor is in.",list.get(0));
 		assertEquals("What's on your mind?",list.get(1));
